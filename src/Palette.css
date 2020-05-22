@@ -3,7 +3,21 @@
 }
 
 .Palette-colors {
-  height: 90%;
+  height: 88%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.Palette-footer {
+  background-color: white;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 1.2rem;
+  margin: 0 1rem;
 }
