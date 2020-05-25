@@ -16,8 +16,8 @@ export default {
     width: '100%',
     borderRadius: '5px',
     overflow: 'hidden',
-    display: 'flex',
-    flexWrap: 'wrap',
+    display: 'flow-root',
+    justifyContent: 'center'
   },
   title: {
     display: 'flex',
@@ -39,6 +39,6 @@ export default {
     display: 'inline-block',
     margin: '0 auto',
     position: 'relative',
-    marginBottom: '-3.5px',
+    float: 'left',
   },
 };

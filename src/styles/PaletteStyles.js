@@ -4,8 +4,7 @@ export default {
   },
   PaletteColors: {
     height: '88%',
-    display: 'flex',
-    flexWrap: 'wrap',
+    display: 'flow-root',
   },
   
   goBack: {

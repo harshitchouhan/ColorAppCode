@@ -6,7 +6,6 @@ import Snackbar from '@material-ui/core/Snackbar';
 import CloseIcon from '@material-ui/icons/Close';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import './Navbar.css';
 import { IconButton } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import styles from './styles/NavbarStyles';

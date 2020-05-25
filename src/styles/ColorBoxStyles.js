@@ -5,7 +5,7 @@ export default {
     width: '20%',
     height: (props) => (props.showingFullPalette ? '25%' : '50%'),
     margin: '0 auto',
-    display: 'inline-block',
+    float: 'left',
     position: 'relative',
     cursor: 'pointer',
     '&:hover button': {
