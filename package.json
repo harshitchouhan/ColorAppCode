@@ -1,5 +1,5 @@
 {
-  "homepage": "http://harshitchouhan.github.io/ColorApp",
+  "homepage": "http://harshitchouhan.github.io/colorApp",
   "name": "demo",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.2.1",
     "array-move": "^2.2.1",
     "chroma-js": "^2.1.0",
+    "emoji-mart": "^3.0.0",
     "gh-pages": "^2.2.0",
     "rc-slider": "^9.2.4",
     "react": "^16.13.1",
@@ -21,7 +22,8 @@
     "react-material-ui-form-validator": "^2.0.10",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-sortable-hoc": "^1.7.1"
+    "react-sortable-hoc": "^1.7.1",
+    "react-transition-group": "^4.4.1"
   },
   "scripts": {
     "predeploy": "npm run build",

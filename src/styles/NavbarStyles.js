@@ -1,9 +1,20 @@
+import sizes from './sizes';
+
 export default {
   Navbar: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    backgroundColor: 'white',
     height: '6vh',
+    [sizes.down('xs')]: {
+      height: '10vh',
+    },
+  },
+  NavbarSpan: {
+    [sizes.down('xs')]: {
+      paddingLeft: '.5rem'
+    },
   },
   logo: {
     marginRight: '15px',
@@ -17,6 +28,9 @@ export default {
     '& a': {
       textDecoration: 'none',
       color: 'black',
+    },
+    [sizes.down('xs')]: {
+      display: 'none',
     },
   },
   slider: {
@@ -36,9 +50,21 @@ export default {
       boxShadow: 'none',
       marginTop: '-4px',
     },
+    [sizes.down('sm')]: {
+      width: '150px',
+    },
   },
   selectContainer: {
     marginLeft: 'auto',
     marginRight: '1rem',
+    [sizes.down('xs')]: {
+      marginRight: '.7rem',
+    },
+
+    "& .MuiInputBase-root": {
+      [sizes.down('xs')]: {
+        fontSize: '.7rem !important',
+      },
+    }
   },
 };

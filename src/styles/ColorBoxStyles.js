@@ -1,4 +1,5 @@
 import chroma from 'chroma-js';
+import sizes from './sizes';
 
 export default {
   ColorBox: {
@@ -10,6 +11,18 @@ export default {
     cursor: 'pointer',
     '&:hover button': {
       opacity: 1,
+    },
+    [sizes.down('lg')]: {
+      width: '25%',
+      height: (props) => (props.showingFullPalette ? '20%' : '33.3333%'),
+    },
+    [sizes.down('md')]: {
+      width: '50%',
+      height: (props) => (props.showingFullPalette ? '10%' : '20%'),
+    },
+    [sizes.down('xs')]: {
+      width: '100%',
+      height: (props) => (props.showingFullPalette ? '8%' : '10%'),
     },
   },
   dynamicColor: {
@@ -24,6 +37,7 @@ export default {
     bottom: '0px',
     width: '60px',
     height: '30px',
+    fontSize: '.75rem',
     textAlign: 'center',
     lineHeight: '30px',
   },
@@ -39,7 +53,7 @@ export default {
     textAlign: 'center',
     outline: 'none',
     background: 'rgba(255, 255, 255, 0.3)',
-    fontSize: '1rem',
+    fontSize: '.75rem',
     lineHeight: '30px',
     textTransform: 'uppercase',
     border: 'none',
@@ -55,7 +69,7 @@ export default {
     padding: '10px',
     color: 'black',
     letterSpacing: '1px',
-    fontSize: '14px',
+    fontSize: '.75rem',
     fontWeight: '400',
     textTransform: 'uppercase',
   },
@@ -96,6 +110,9 @@ export default {
       margin: '0',
       padding: '1rem',
       textTransform: 'uppercase',
+      [sizes.down('xs')]: {
+        fontSize: '5rem',
+      },
     },
     '& p': {
       fontSize: '2rem',
